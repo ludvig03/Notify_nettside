@@ -1,35 +1,3 @@
-// import ThreeGlobe from 'three-globe';
-// import * as THREE from 'three';
-// import { react, useState, Suspense } from "react"
-// import { Canvas, useLoader } from "@react-three/fiber"
-// import Earth from "./Earth.js"  
-// import ReactDOM from 'react-dom'
-// import { TextureLoader } from 'three/src/loaders/TextureLoader'
-// import { useTexture } from "@react-three/drei"
-
-
-
-// export default function Klode() {
-//     const texture_6 = useLoader(TextureLoader, 'texture.jpeg')
-
-//     return (
-        
-//         <div>
-//             <Canvas style={{height: "100vh", width: "100vw"}}>
-//                 <Suspense fallback={null}>
-//                     <ambientLight intensity={0.5} />
-//                     <directionalLight color="white" position={[0, 0, 3]} />
-//                     <Stars radius={20} depth={50} count={5000} factor={5} saturation={0} fade speed={3}/>
-//                     <mesh position={[-3, 0, 0]}>
-//                         <sphereGeometry/>
-//                         <meshStandardMaterial map={texture_6}/>
-//                     </mesh>
-//                 </Suspense>
-//             </Canvas>   
-//             <div className="canvas-placeholder"></div>
-//         </div>
-//     )
-
 import React, { useRef, Suspense } from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { TextureLoader } from 'three/src/loaders/TextureLoader.js'
@@ -87,6 +55,8 @@ function Earth() {
     const mesh = useRef()
     useFrame(() => {
       mesh.current.rotation.x = mesh.current.rotation.y += 0.002
+      // mesh.current.position = -1.8
+
     })
 
     // const mesh2 = useRef()
@@ -101,7 +71,20 @@ function Earth() {
     //     <Html center>{progress} % loaded</Html>
     //   )
     // }
+    // console.log(window.screen.width)
+    // let bredde = window.screen.width
 
+    // if (bredde < 400) {
+    //   useFrame(() => {
+    //     mesh.current.position = 
+    //   })
+    // }
+    // else {
+    //   useFrame(() => {
+    //     mesh.current.position = 0
+    //   })
+      
+    // }
     
 
   return (

@@ -32,7 +32,7 @@ export default function Fordeler() {
     <div className="overflow-hidden bg-gray-800">
       <div className="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
         <svg
-          className="absolute top-0 left-full -translate-x-1/2 -translate-y-3/4 transform lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
+          className="pl-12 lg:pl-0 absolute top-0 left-full -translate-x-1/2 -translate-y-3/4 transform lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
           width={404}
           height={784}
           fill="none"

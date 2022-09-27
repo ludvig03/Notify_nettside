@@ -193,17 +193,17 @@ export default function Hero() {
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt
                     amet fugiat veniam occaecat fugiat.
                   </p>
-                  <div className="mt-10 sm:mt-12">
+                  <div className="mt-24 sm:mt-10 inline-block">
                     <button
                         type="button"
-                        className=" cursor-pointer w-48 mr-12 inline-flex items-center rounded border border-transparent font-medium text-white shadow-sm"
+                        className=" cursor-pointer lg:w-48 w-44 mr-1.5 lg:mr-12 inline-flex items-center rounded border border-transparent font-medium text-white shadow-sm"
                         >
                         <img src="https://logos-download.com/wp-content/uploads/2016/06/Download_on_the_App_Store_logo-700x207.png"></img>
                     </button>
                     <button
                         type="button"
                         onClick={console.log("yo")}
-                        className="w-48 inline-flex items-center rounded border border-transparent font-medium text-white shadow-sm"
+                        className="lg:pl-0 pl-0 lg:w-48 w-44  inline-flex items-center rounded border border-transparent font-medium text-white shadow-sm"
                         >
                         <img src="https://anydesk.com/_static/img/badges/Available_GooglePlay-55dc42.svg"></img>
                     </button>
@@ -211,7 +211,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
-                <div className="max-w-lg px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 ">
+                <div className="max-w-lg sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 ">
                   {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
                     <Klode/>
                 </div>
